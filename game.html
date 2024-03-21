@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <title>Laya.js Game</title>
     <!-- 引入laya.core.js -->
-    <script src="js/libs/laya.core.js"></script>
+    <script src="https://raw.githubusercontent.com/QuantumLeap-us/testgame/main/laya.core.js"></script>
     <!-- 如果游戏使用了物理引擎,也需要引入laya.cannonPhysics.js -->
-    <script src="js/libs/laya.cannonPhysics.js"></script>
+    <script src="https://raw.githubusercontent.com/QuantumLeap-us/testgame/main/laya.cannonPhysics.js"></script>
 </head>
 <body>
     <!-- 画布容器 -->
@@ -16,7 +16,7 @@
         Laya.init(800, 600, Laya.WebGL);
 
         //加载游戏资源文件bundle.js
-        Laya.loader.create("bundle.js", Laya.Handler.create(this, loadComplete));
+        Laya.loader.create("https://github.com/QuantumLeap-us/testgame/main/bundle.js", Laya.Handler.create(this, loadComplete));
 
         function loadComplete() {
             //游戏资源加载完成后的逻辑
