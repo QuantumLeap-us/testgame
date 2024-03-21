@@ -16,7 +16,7 @@
         Laya.init(800, 600, Laya.WebGL);
 
         //加载游戏资源文件bundle.js
-        Laya.loader.create("https://github.com/QuantumLeap-us/testgame/main/bundle.js", Laya.Handler.create(this, loadComplete));
+        Laya.loader.create("https://raw.githubusercontent.com/QuantumLeap-us/testgame/main/bundle.js", Laya.Handler.create(this, loadComplete));
 
         function loadComplete() {
             //游戏资源加载完成后的逻辑
